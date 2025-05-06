@@ -14,7 +14,6 @@ Notes :
 ## Directory Structure
 
 - `slides` contains all the `.md` files that can be edited, 
-- `output` contains the `.html` files i.e. the slides that can be shown
+- `output` contains the `.html` files.
+    To launch them, you need the Reveal.js git directory here.
 - `images` is the directory where images live
-
-
