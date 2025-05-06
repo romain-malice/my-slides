@@ -1,6 +1,6 @@
 # README
 
-Where I keep all my slideshows.
+A directory with all my slideshows, in reveal.js.
 
 ## Interface
 
