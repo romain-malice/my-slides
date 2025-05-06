@@ -6,8 +6,10 @@ Where I keep all my slideshows.
 
 The interface is controlled by the `build.sh` file.
 
-Arguments :
-- File name without extension
+Synthax : `./build.sh FILENAME`
+
+Notes :
+- `FILENAME` is the name of the slideshow **without extension**
 
 ## Directory Structure
 
