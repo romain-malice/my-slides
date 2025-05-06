@@ -1,28 +1,21 @@
 #!/sbin/bash
 
-INPUT="slides/$1.md"
-OUTPUT="docs/$1.html"
-REVEAL_URL=""
+INPUT="content/$1.md"
+OUTPUT="slides/$1.html"
 
 if [ ! -f "$INPUT" ]; then
 	echo "ERROR : file $INPUT not found"
 	exit 1
 fi
 
-if [ $2 = "--local" ]; then
-	if [ ! -d docs/reveal.js ]; then
-		echo "No Reveal.js found"
-		exit 1
-	fi
-	REVEAL_URL="reveal.js"
-elif [ $2 = "--cdn" ];then
-	REVEAL_URL="https://cdn.jsdelivr.net/npm/reveal.js@4"
-else
-	echo "Please use either --local to use local revealjs or --cdn to use content delivery network"
-fi
+# For local use
+pandoc -t revealjs -s "$INPUT" -o "$OUTPUT"\
+	-V revealjs-url=./reveal.js\
+	-V theme=moon\
+	--mathjax
 
 pandoc -t revealjs -s "$INPUT" -o "$OUTPUT"\
-	-V revealjs-url=$REVEAL_URL\
+	-V revealjs-url="https://cdn.jsdelivr.net/npm/reveal.js@4"\
 	-V theme=moon\
 	--mathjax
 
