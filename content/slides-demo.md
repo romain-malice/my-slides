@@ -2,7 +2,6 @@
 title: Slides Demo
 subtitle: Everything you need to know
 author: Romain Malice
-date: today
 ---
 
 # Introduction
@@ -35,9 +34,9 @@ date: [date]
 
 Paragraphs :
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at augue vestibulum, vestibulum eros ut, ullamcorper dolor. Suspendisse semper tortor non faucibus gravida. In sed volutpat nibh. Cras porttitor tellus at est imperdiet consequat tempor eget nunc.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at augue vestibulum, vestibulum eros ut, ullamcorper dolor.
 
-Nulla maximus, augue vel pharetra feugiat, elit magna consequat sapien, vitae bibendum purus sem sed urna. Cras tincidunt id neque vitae pretium. Nam eu nisi tincidunt, tincidunt orci ut, consectetur lorem. Donec dapibus nulla lectus, interdum efficitur orci efficitur a. Mauris auctor mattis purus eu elementum.
+Nulla maximus, augue vel pharetra feugiat, elit magna consequat sapien, vitae bibendum purus sem sed urna.
 
 ---
 
@@ -58,7 +57,7 @@ $$
 
 Images are always located in the `./images` directory.
 Right now I only have one :
-![The only image I have right now](../images/transformer.png)
+<img src="../images/transformer.png" alt="My only image :(" width="750">
 
 # Viewing Slides
 
