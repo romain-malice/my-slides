@@ -12,11 +12,7 @@ fi
 pandoc -t revealjs -s "$INPUT" -o "$OUTPUT"\
 	-V revealjs-url=./reveal.js\
 	-V theme=moon\
-	--mathjax
-
-pandoc -t revealjs -s "$INPUT" -o "$OUTPUT"\
-	-V revealjs-url="https://cdn.jsdelivr.net/npm/reveal.js@4"\
-	-V theme=moon\
+	--slide-level 2\
 	--mathjax
 
 echo "✅ Built: $OUTPUT"
